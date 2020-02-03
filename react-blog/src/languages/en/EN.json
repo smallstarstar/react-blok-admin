@@ -1,0 +1,71 @@
+{
+	"AddArticle": {
+		"PublishArticle": "PublishArticle",
+		"TypeName": "TypeName",
+		"PleaseInput": "PleaseInput",
+		"Detail": "Detail",
+		"SubTitleName": "SubTitleName",
+		"TitleName": "TitleName",
+		"Cancel": "Cancel",
+		"Submit": "Submit",
+		"PublishSuccess": "PublishSuccess"
+	},
+	"ArticleBlok": {
+		"Commit": "Commit",
+		"View": "View",
+		"Collection": "Collection"
+	},
+	"ArticleDetail": {},
+	"HeaderTop": {
+		"Chinese": "Chinese",
+		"English": "English",
+		"Login": "Login",
+		"Register": "Register",
+		"UserCenter": "UserCenter",
+		"Language": "Language",
+		"Publish": "Publish",
+		"PleaseLogin": "PleaseLogin"
+	},
+	"MyArticles": {
+		"Articles": "Articles",
+		"TypeName": "TypeName",
+		"SubTypeName": "SubTypeName",
+		"Views": "Views",
+		"TitleName": "TitleName",
+		"Agree": "Agree",
+		"Details": "Details",
+		"Operate": "Operate",
+		"InTo": "InTo",
+		"Delete": "Delete",
+		"DeleteSuccess": "DeleteSuccess",
+		"Sure": "Sure",
+		"Cancel": "Cancel",
+		"Tip": "Tip",
+		"AreYouWantToDeleteIt?": "AreYouWantToDeleteIt?"
+	},
+	"UserInfo": {
+		"PersonalInfo": "PersonalInfo",
+		"UserInfo": "UserInfo",
+		"UserRank": "UserRank",
+		"UserArticle": "UserArticle",
+		"UserName": "UserName",
+		"Password": "Password",
+		"Role": "Role"
+	},
+	"UserCare": {
+		"UserName": "UserName"
+	},
+	"Login": {
+		"Login": "Login",
+		"UserName": "UserName",
+		"PleaseInputUserName": "PleaseInputUserName",
+		"Password": "Password",
+		"PleaseInputPassword": "PleaseInputPassword",
+		"Remember": "Remember"
+	},
+	"Common": {
+		"ServicesError": "ServicesError",
+		"ParamsError": "ParamsError",
+		"NotFound": "NotFound"
+	}
+}

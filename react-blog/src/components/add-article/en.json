@@ -1,0 +1,13 @@
+{
+    "AddArticle":{
+        "PublishArticle": "PublishArticle",
+        "TypeName": "TypeName",
+        "PleaseInput": "PleaseInput",
+        "Detail": "Detail",
+        "SubTitleName": "SubTitleName",
+        "TitleName": "TitleName",
+        "Cancel": "Cancel",
+        "Submit": "Submit",
+        "PublishSuccess":"PublishSuccess"
+    }
+}

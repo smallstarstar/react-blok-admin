@@ -1,0 +1,71 @@
+{
+	"AddArticle": {
+		"PublishArticle": "发布文章",
+		"TypeName": "类型",
+		"PleaseInput": "请输入",
+		"Detail": "描述",
+		"SubTitleName": "子类型",
+		"TitleName": "标题",
+		"Cancel": "取消",
+		"Submit": "提交",
+		"PublishSuccess": "发布成功"
+	},
+	"ArticleDetail": {},
+	"ArticleBlok": {
+		"Commit": "评论",
+		"View": "查看",
+		"Collection": "收藏"
+	},
+	"HeaderTop": {
+		"Chinese": "中文",
+		"English": "英文",
+		"Login": "登录",
+		"Register": "注册",
+		"UserCenter": "用户中心",
+		"Language": "语言",
+		"Publish": "发布",
+		"PleaseLogin": "请登录"
+	},
+	"MyArticles": {
+		"Articles": "我的文章",
+		"TypeName": "名称",
+		"SubTypeName": "子类型",
+		"Views": "查阅量",
+		"TitleName": "标题",
+		"Agree": "点赞量",
+		"Details": "描述",
+		"Operate": "操作",
+		"InTo": "进入",
+		"Delete": "删除",
+		"DeleteSuccess": "删除成功",
+		"Sure": "确定",
+		"Cancel": "取消",
+		"Tip": "提示",
+		"AreYouWantToDeleteIt?": "确定要删除？"
+	},
+	"UserInfo": {
+		"PersonalInfo": "个人信息",
+		"UserInfo": "个人信息",
+		"UserRank": "查看排名",
+		"UserArticle": "我的博客",
+		"UserName": "姓名",
+		"Password": "密码",
+		"Role": "角色"
+	},
+	"UserCare": {
+		"UserName": "姓名"
+	},
+	"Common": {
+		"ServicesError": "服务器错误",
+		"ParamsError": "参数错误",
+		"NotFound": "不存在"
+	},
+	"Login": {
+		"Login": "登录",
+		"UserName": "用户名",
+		"PleaseInputUserName": "请输入用户名",
+		"Password": "密码",
+		"PleaseInputPassword": "请输入密码",
+		"Remember": "记住我"
+	}
+}

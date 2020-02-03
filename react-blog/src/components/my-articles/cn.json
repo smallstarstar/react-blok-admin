@@ -1,0 +1,19 @@
+{
+    "MyArticles": {
+        "Articles": "我的文章",
+        "TypeName": "名称",
+        "SubTypeName": "子类型",
+        "Views": "查阅量",
+        "TitleName": "标题",
+        "Agree": "点赞量",
+        "Details": "描述",
+        "Operate": "操作",
+        "InTo": "进入",
+        "Delete": "删除",
+        "DeleteSuccess": "删除成功",
+        "Sure":"确定",
+        "Cancel":"取消",
+        "Tip":"提示",
+        "AreYouWantToDeleteIt?":"确定要删除？"
+    }
+}

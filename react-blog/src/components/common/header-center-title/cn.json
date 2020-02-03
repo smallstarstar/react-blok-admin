@@ -1,0 +1,7 @@
+{
+    "Common":{
+        "ServicesError": "服务器错误",
+        "ParamsError": "参数错误",
+        "NotFound": "不存在"
+    }
+}

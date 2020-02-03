@@ -1,0 +1,12 @@
+{
+    "HeaderTop": {
+        "Chinese": "Chinese",
+        "English": "English",
+        "Login": "Login",
+        "Register": "Register",
+        "UserCenter": "UserCenter",
+        "Language": "Language",
+        "Publish": "Publish",
+        "PleaseLogin": "PleaseLogin"    
+    }
+}

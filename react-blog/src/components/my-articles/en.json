@@ -1,0 +1,19 @@
+{
+    "MyArticles":{
+        "Articles":"Articles",
+        "TypeName": "TypeName",
+        "SubTypeName": "SubTypeName",
+        "Views": "Views",
+        "TitleName": "TitleName",
+        "Agree": "Agree",
+        "Details": "Details",
+        "Operate": "Operate",
+        "InTo": "InTo",
+        "Delete": "Delete",
+        "DeleteSuccess": "DeleteSuccess",
+        "Sure":"Sure",
+        "Cancel":"Cancel",
+        "Tip":"Tip",
+        "AreYouWantToDeleteIt?":"AreYouWantToDeleteIt?"
+    }
+}

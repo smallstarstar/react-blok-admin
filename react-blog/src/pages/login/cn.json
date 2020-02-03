@@ -1,0 +1,10 @@
+{
+    "Login":{
+        "Login": "登录",
+        "UserName": "用户名",
+        "PleaseInputUserName": "请输入用户名",
+        "Password": "密码",
+        "PleaseInputPassword": "请输入密码",
+        "Remember": "记住我"
+    }
+}
