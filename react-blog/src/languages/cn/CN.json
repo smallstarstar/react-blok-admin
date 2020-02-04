@@ -10,11 +10,19 @@
 		"Submit": "提交",
 		"PublishSuccess": "发布成功"
 	},
-	"ArticleDetail": {},
+	"ArticleDetail": {
+		"Title": "标题",
+		"Detail": "描述",
+		"AddCommit": "添加评论",
+		"NoData": "暂无评论",
+		"AddCommitSuccess": "添加评论成功"
+	},
 	"ArticleBlok": {
 		"Commit": "评论",
 		"View": "查看",
-		"Collection": "收藏"
+		"Collection": "收藏",
+		"Care": "关注",
+		"InTo": "进入"
 	},
 	"HeaderTop": {
 		"Chinese": "中文",
@@ -24,7 +32,9 @@
 		"UserCenter": "用户中心",
 		"Language": "语言",
 		"Publish": "发布",
-		"PleaseLogin": "请登录"
+		"PleaseLogin": "请登录",
+		"LoginOut": "退出",
+		"LoginOutSuccess": "退出成功"
 	},
 	"MyArticles": {
 		"Articles": "我的文章",
@@ -55,17 +65,20 @@
 	"UserCare": {
 		"UserName": "姓名"
 	},
-	"Common": {
-		"ServicesError": "服务器错误",
-		"ParamsError": "参数错误",
-		"NotFound": "不存在"
-	},
 	"Login": {
 		"Login": "登录",
 		"UserName": "用户名",
 		"PleaseInputUserName": "请输入用户名",
 		"Password": "密码",
 		"PleaseInputPassword": "请输入密码",
-		"Remember": "记住我"
+		"Remember": "记住我",
+		"Register": "注册",
+		"Sure": "确定",
+		"Cancel": "取消"
+	},
+	"Common": {
+		"ServicesError": "服务器错误",
+		"ParamsError": "参数错误",
+		"NotFound": "不存在"
 	}
 }

@@ -2,6 +2,8 @@
     "ArticleBlok":{
         "Commit":"评论",
         "View": "查看",
-        "Collection": "收藏"
+        "Collection": "收藏",
+        "Care": "关注",
+        "InTo": "进入"
     }
 }

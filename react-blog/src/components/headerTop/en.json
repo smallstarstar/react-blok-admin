@@ -7,6 +7,8 @@
         "UserCenter": "UserCenter",
         "Language": "Language",
         "Publish": "Publish",
-        "PleaseLogin": "PleaseLogin"    
+        "PleaseLogin": "PleaseLogin",
+        "LoginOut": "LoginOut",
+        "LoginOutSuccess": "LoginOutSuccess"
     }
-}
+}   

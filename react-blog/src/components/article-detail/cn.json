@@ -1,5 +1,9 @@
 {
     "ArticleDetail":{
-      
+      "Title":"标题",
+      "Detail":"描述",
+      "AddCommit":"添加评论",
+      "NoData":"暂无评论",
+      "AddCommitSuccess": "添加评论成功"
     }
 }

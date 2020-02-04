@@ -36,7 +36,7 @@
           <el-button
             size="mini"
             type="primary"
-            @click="handleInto( scope.row)"
+            @click="handleInto(scope.row)"
           >{{$t('MyArticles.InTo')}}</el-button>
           <el-button
             size="mini"
@@ -63,13 +63,15 @@
 
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
-import { Getter } from "vuex-class";
+import { Getter, Action } from "vuex-class";
 import ArticlesServices from "@/api/articles-services";
 import { PageInfo } from "../../models/page-info";
 @Component({ components: {} })
 export default class MyCircles extends Vue {
   @Getter("userInfo")
   userInfo!: any;
+  @Action("saveArticleInfo")
+  saveArticleInfo!: any;
   private pageInfo: PageInfo = new PageInfo();
   private currentPage: Number = 1;
   private currentSize: Number = 5;
@@ -90,12 +92,16 @@ export default class MyCircles extends Vue {
    * @returns true;
    */
   handleDelete(e: any) {
-    this.$confirm(this.$t('MyArticles.AreYouWantToDeleteIt?') as string, this.$t('MyArticles.Tip') as string, {
-      confirmButtonText: this.$t('MyArticles.Sure') as string,
-      cancelButtonText: this.$t('MyArticles.Cancel') as string,
-      type: "warning",
-      center: false
-    })
+    this.$confirm(
+      this.$t("MyArticles.AreYouWantToDeleteIt?") as string,
+      this.$t("MyArticles.Tip") as string,
+      {
+        confirmButtonText: this.$t("MyArticles.Sure") as string,
+        cancelButtonText: this.$t("MyArticles.Cancel") as string,
+        type: "warning",
+        center: false
+      }
+    )
       .then(async () => {
         let data = await ArticlesServices.deletePersonBlok(
           e.id,
@@ -105,18 +111,23 @@ export default class MyCircles extends Vue {
         if (data) {
           this.$message({
             type: "success",
-            message: this.$t('MyArticles.DeleteSuccess') as string
+            message: this.$t("MyArticles.DeleteSuccess") as string
           });
           await this.getInit(this.userInfo.id, this.pageInfo);
         }
       })
       .catch(() => {});
   }
-  handleInto() {}
-  handleCurrentSize(val: any) {}
-  handleCurrentChange(val: any) {
-
+  handleInto(e: any) {
+    let obj: any = {};
+    obj.articleEntity = e;
+    this.saveArticleInfo(obj);
+    this.$router.push({
+      path: "/article-detail"
+    });
   }
+  handleCurrentSize(val: any) {}
+  handleCurrentChange(val: any) {}
 }
 </script>
 

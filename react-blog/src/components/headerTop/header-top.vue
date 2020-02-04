@@ -17,13 +17,8 @@
         <img src="../../assets/logo.png" alt class="img_user" v-if="this.userInfo" />
         <span class="user_name" v-if="this.userInfo">{{this.userInfo.userName}}</span>
         <div class="button_group">
-          <el-popover
-            placement="bottom"
-            width="400"
-            trigger="click"
-            v-if="!this.userInfo"
-          >
-          <Login :cleanLogin="cleanLogin"/>
+          <el-popover placement="bottom" width="400" trigger="click" v-if="!this.userInfo">
+            <Login :cleanLogin="cleanLogin" />
             <span slot="reference">{{$t('HeaderTop.Login')}}</span>
           </el-popover>
           <span @click="goUserCenter()">{{$t('HeaderTop.UserCenter')}}</span>
@@ -39,6 +34,7 @@
               </el-dropdown-menu>
             </el-dropdown>
           </span>
+          <span @click="loginOut()">{{$t('HeaderTop.LoginOut')}}</span>
         </div>
       </div>
     </div>
@@ -97,6 +93,28 @@ export default class HeaderTop extends Vue {
   }
   cancelDialog() {
     this.dialogVisiable = false;
+  }
+  loginOut() {
+    if (!localStorage.getItem("userInfoOfBlok")) {
+      this.$message.warning(this.$t("HeaderTop.PleaseLogin") as string);
+    } else {
+      this.$confirm(
+        this.$t("HeaderTop.LoginOut") as string,
+        this.$t("MyArticles.Tip") as string,
+        {
+          confirmButtonText: this.$t("MyArticles.Sure") as string,
+          cancelButtonText: this.$t("MyArticles.Cancel") as string,
+          type: "warning",
+          center: false
+        }
+      )
+        .then(() => {
+          localStorage.removeItem("userInfoOfBlok");
+          this.saveUserInfo(null);
+          this.$message.success(this.$t("HeaderTop.LoginOutSuccess") as string);
+        })
+        .catch(() => {});
+    }
   }
 }
 </script>

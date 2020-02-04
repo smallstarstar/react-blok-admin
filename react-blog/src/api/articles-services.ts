@@ -2,11 +2,15 @@ import configBase from '../../public/config';
 import axios from 'axios';
 import articlesUrl from '@/url/articles-url';
 import { PageInfo } from '@/models/page-info';
-
+import { CommitInfo } from '@/models/commit-info';
 
 const BaseUrl = configBase.baseUrl;
 
 const ArticlesServices = {
+    userRegister(userInfo: any) {
+        const url = `${BaseUrl}${articlesUrl.userRegister}`;
+        return axios.post(url, userInfo);
+    },
     getArticlesBypageAndSize(pageInfo: PageInfo) {
         const page = pageInfo.page;
         const size = pageInfo.size;
@@ -36,6 +40,18 @@ const ArticlesServices = {
     deletePersonBlok(blok: string, personId: string) {
         const url = `${BaseUrl}${articlesUrl.deletePersonBlok}?id=${blok}&personId=${personId}`;
         return axios.delete(url);
+    },
+    // 添加评论信息
+    addCommit(commitInfo: CommitInfo) {
+        const url = `${BaseUrl}${articlesUrl.addCommit}`;
+        return axios.post(url, commitInfo);
+    },
+    // 根据文章的id获取文章的评论信息
+    getCommentByArticleAndPageInfo(id: string, pageInfo: PageInfo) {
+        const page = pageInfo.page;
+        const size = pageInfo.size;
+        const url = `${BaseUrl}${articlesUrl.getCommentByArticleAndPageInfo}?id=${id}&page=${page}&size=${size}`;
+        return axios.get(url);
     }
 }
 

@@ -1,5 +1,9 @@
 {
     "ArticleDetail":{
-      
+        "Title":"Title",
+        "Detail":"Detail",
+        "AddCommit":"AddCommit",
+        "NoData":"NoData",
+        "AddCommitSuccess": "AddCommitSuccess"
     }
 }

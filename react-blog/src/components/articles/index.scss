@@ -9,11 +9,11 @@
 .center {
     width: 98%;
     height: 130px;
-    padding: 10px;
+    padding: 5px;
     display: flex;
     flex-direction: row;
-
-    border:1px solid #f2784b;
+    border-bottom:1px solid #f2784b;
+    margin-top: 2px;
 }
 .right {
     width: 150px;
@@ -24,6 +24,12 @@
         border-radius: 50%;
         text-align: center;
         line-height: 30px;
+        position: relative;
+        .button_care {
+            position: absolute;
+            top: 0px;
+            left: 45px;
+        }
     }
     .type {
         margin-top: 5px;
@@ -35,6 +41,12 @@
 .left {
     width: 100%;
     border-left: 1px solid #f2784b;
+    position: relative;
+    .left_button {
+        position: absolute;
+        right: 6px;
+        top: -5px;
+    }
     .titleName {
         text-align: center;
         font-size: 18px;

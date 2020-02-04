@@ -5,6 +5,9 @@
         "PleaseInputUserName": "请输入用户名",
         "Password": "密码",
         "PleaseInputPassword": "请输入密码",
-        "Remember": "记住我"
+        "Remember": "记住我",
+        "Register": "注册",
+        "Sure": "确定",
+        "Cancel": "取消"
     }
 }

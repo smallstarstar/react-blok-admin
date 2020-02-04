@@ -9,6 +9,14 @@ const articlesUrl = {
     getArticleTypeList: '/api/v1/listTypeName',
     // 查询个人的博客
     getOwnArticleBlok: '/api/v1/myArticleInfo/{id}/{page}/{size}',
-    deletePersonBlok: '/api/v1/deleteArticle/blok/{id}/person/{personId}'
+
+    deletePersonBlok: '/api/v1/deleteArticle/blok/{id}/person/{personId}',
+
+    addCommit: '/api/v1/saveCommentInfo',
+
+    getCommentByArticleAndPageInfo: '/api/v1/commentInfo/{id}/{page}/{size}',
+
+    userRegister: '/api/v1/userInfo'
+
 }
 export default articlesUrl;

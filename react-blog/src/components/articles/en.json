@@ -2,6 +2,8 @@
     "ArticleBlok":{
         "Commit":"Commit",
         "View": "View",
-        "Collection": "Collection"
+        "Collection": "Collection",
+        "Care": "Care",
+        "InTo": "InTo"
     }
 }

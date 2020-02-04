@@ -14,6 +14,11 @@ const routes: any = [
     component: () => import('@/views/home.vue')
   },
   {
+    path: '/article-detail',
+    name: 'article-detail',
+    component: () => import('@/components/article-detail/index.vue')
+  },
+  {
     path: '/my-center',
     component: () => import('@/views/my-center/index.vue'),
     children: [
@@ -50,13 +55,13 @@ const router: any = new VueRouter({
 /**
  * 添加路由守卫
  */
-// router.beforeEach((to: any, from: any, next: any) => {
-//   const token = localStorage.getItem('userInfo') ? true : false;
-//   if (to.path === '/') {
-//     next();
-//   } else {
-//     token ? next() : next('/');  
-//   }
-// })
+router.beforeEach((to: any, from: any, next: any) => {
+  const token = localStorage.getItem('userInfoOfBlok') ? true : false;
+  if (to.path === '/') {
+    next();
+  } else {
+    token ? next() : next('/');  
+  }
+})
 
 export default router

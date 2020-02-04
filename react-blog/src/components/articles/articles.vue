@@ -7,12 +7,17 @@
             <div v-if="item.userImg === null">
               <div style="font-size: 20px">{{item.userInfo.userName[0].toUpperCase()}}</div>
             </div>
+            <div class="button_care">
+              <div v-if="userInfo"> <el-button type="success" v-if="item.articleEntity.authorId !== userInfo.id" size="mini" icon="el-icon-plus">{{$t('ArticleBlok.Care')}}</el-button></div>
+              <div v-else> <el-button type="success" size="mini" icon="el-icon-plus">{{$t('ArticleBlok.Care')}}</el-button></div>
+            </div>
           </div>
           <div class="type">{{item.articleEntity.typeId}}</div>
           <div class="type">{{item.articleEntity.subTypeId}}</div>
           <div class="time_info">{{timeServices.changeStateTime(item.articleEntity.cTime)}}</div>
         </div>
         <div class="left">
+          <div class="left_button"><el-button type="primary" size="mini" icon="el-icon-right" @click="goInto(item)">{{$t('ArticleBlok.InTo')}}</el-button></div>
           <div class="titleName">{{item.articleEntity.articleName}}</div>
           <div class="desc">{{item.articleEntity.desc}}</div>
           <div class="operate">
@@ -54,10 +59,15 @@ import ArticlesServices from "@/api/articles-services";
 import timeFormat from "@/utils/timeFormat";
 import rxEvent from "pubsub-js";
 import EventKeys from "@/common/event-keys";
+import { Getter, Action } from 'vuex-class';
 @Component({
   components: {}
 })
 export default class Articles extends Vue {
+  @Getter('userInfo')
+  userInfo!: any;
+  @Action('saveArticleInfo')
+  saveArticleInfo!: any;
   private pageInfo: PageInfo = new PageInfo();
   private listData: Array<[]> = [];
   private currentPage: Number = 0;
@@ -87,6 +97,13 @@ export default class Articles extends Vue {
   async handleCurrentChange(val: Number) {
     this.pageInfo.page = val;
     await this.getInit(this.pageInfo);
+  }
+  goInto(e: any) {
+    // 路由条状以及将数据存入store中
+    this.saveArticleInfo(e);
+    this.$router.push({
+      path: '/article-detail'
+    })
   }
 }
 </script> 

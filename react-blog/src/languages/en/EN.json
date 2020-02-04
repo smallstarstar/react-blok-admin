@@ -10,12 +10,20 @@
 		"Submit": "Submit",
 		"PublishSuccess": "PublishSuccess"
 	},
+	"ArticleDetail": {
+		"Title": "Title",
+		"Detail": "Detail",
+		"AddCommit": "AddCommit",
+		"NoData": "NoData",
+		"AddCommitSuccess": "AddCommitSuccess"
+	},
 	"ArticleBlok": {
 		"Commit": "Commit",
 		"View": "View",
-		"Collection": "Collection"
+		"Collection": "Collection",
+		"Care": "Care",
+		"InTo": "InTo"
 	},
-	"ArticleDetail": {},
 	"HeaderTop": {
 		"Chinese": "Chinese",
 		"English": "English",
@@ -24,7 +32,9 @@
 		"UserCenter": "UserCenter",
 		"Language": "Language",
 		"Publish": "Publish",
-		"PleaseLogin": "PleaseLogin"
+		"PleaseLogin": "PleaseLogin",
+		"LoginOut": "LoginOut",
+		"LoginOutSuccess": "LoginOutSuccess"
 	},
 	"MyArticles": {
 		"Articles": "Articles",
@@ -61,7 +71,10 @@
 		"PleaseInputUserName": "PleaseInputUserName",
 		"Password": "Password",
 		"PleaseInputPassword": "PleaseInputPassword",
-		"Remember": "Remember"
+		"Remember": "Remember",
+		"Register": "Register",
+		"Sure": "Sure",
+		"Cancel": "Cancel"
 	},
 	"Common": {
 		"ServicesError": "ServicesError",
